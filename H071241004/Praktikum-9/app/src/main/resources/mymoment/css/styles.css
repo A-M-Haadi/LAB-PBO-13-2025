@@ -1,0 +1,97 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    -fx-base: #1C1C1E;
+    -fx-primary-color: #0A84FF;
+    -fx-accent-color: #30D158;
+    -fx-text-color: #000040;
+    -fx-secondary-text-color: #dddddd;
+}
+
+.root-pane {
+    -fx-background-color: -fx-base;
+}
+
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-text-color;
+}
+
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.nickname-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-text-color;
+}
+
+.fullname-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-secondary-text-color;
+}
+
+.button {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: derive(-fx-primary-color, -10%);
+}
+
+.button-upload {
+    -fx-background-color: -fx-accent-color;
+}
+
+.button-upload:hover {
+    -fx-background-color: derive(-fx-accent-color, -10%);
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8px;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-prompt-text-fill: -fx-secondary-text-color;
+}
+
+.text-field:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-border-width: 1.5px;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.profile-image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-background-radius: 60;
+    -fx-border-radius: 60;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.tile-pane {
+    -fx-padding: 5px;
+    -fx-background-color: transparent;
+}
